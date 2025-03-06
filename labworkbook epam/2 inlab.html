@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML5 Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header,
+        nav,
+        footer {
+            background-color: #4dbccf90;
+            color: white;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid rgb(250, 62, 62);
+            padding: 10px;
+        }
+
+        form {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #88f117;
+            border-radius: 5px;
+            background-color: #de40e9;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Webpage</h1>
+        <img src="klh logo.jpeg" alt="KLH University Logo" width="150">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#branches">Branches</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <h2>Home Section</h2>
+            <p>Welcome to KLH University, a premier institution dedicated to academic excellence and innovation. Our
+                university offers world-class education in various disciplines, focusing on research, practical
+                learning, and industry collaboration.</p>
+            <p>At KLH University, we provide a dynamic learning environment with modern infrastructure, experienced
+                faculty, and numerous opportunities for personal and professional growth. Our programs include
+                undergraduate and postgraduate courses in engineering, management, and applied sciences.</p>
+
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>KLH University is committed to providing quality education that aligns with industry standards. Our
+                faculty consists of experienced professionals and researchers dedicated to mentoring students and
+                fostering a culture of innovation.</p>
+            <p>We focus on practical learning, real-world projects, and collaborations with top industries to ensure
+                students gain hands-on experience in their fields. Our students participate in national and
+                international competitions, research projects, and internships to enhance their skills and
+                employability.</p>
+
+        </section>
+        <section id="branches">
+            <h2>University Branches</h2>
+            <table>
+                <tr>
+                    <th>Branch</th>
+                </tr>
+                <tr>
+                    <td>Computer Science and Engineering (CSE)</td>
+                </tr>
+                <tr>
+                    <td>Artificial Intelligence and Data Science (AIDS)</td>
+                </tr>
+                <tr>
+                    <td>Electronics and Communication Engineering (ECE)</td>
+                </tr>
+            </table>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 My Webpage. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Number</title>
+
+    <style>
+        @media print {
+            body {
+                background-color: white;
+                font-family: Arial, sans-serif;
+            }
+
+            .no-print {
+                display: none;
+                /* Hide elements when printing */
+            }
+
+            .print-message {
+                display: block;
+                font-size: 20px;
+                color: black;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Reverse Number Program</h2>
+    <p>Enter a number to reverse:</p>
+
+    <input type="number" id="numInput">
+
+    <!-- Separate buttons for Reverse and Print -->
+    <button onclick="reverseNum()">Reverse</button>
+    <button onclick="printResult()">Print</button>
+
+    <p id="result"></p>
+
+    <!-- Hidden message for print -->
+    <p class="print-message" style="display: none;">Printed Output of Reverse Number</p>
+
+    <!-- Link external JavaScript -->
+    <script src="4 inlab.js"></script>
+</body>
+
+</html>

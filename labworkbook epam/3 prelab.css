@@ -1,0 +1,84 @@
+/* General Screen Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background: #219ba7;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+    color: #db4fc9;
+}
+
+footer {
+    background: #4d9ee9;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Print-Specific Styles */
+@media print {
+    body {
+        background: none;
+        color: black;
+        font-size: 14px;
+    }
+
+    header,
+    nav,
+    footer {
+        display: none;
+        /* Hide unnecessary elements */
+    }
+
+    main {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1,
+    h2 {
+        color: black;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+}
